@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13/05/2018 19:27:07 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.tbsa.entity.Usuario" table="USUARIO" schema="dbo" catalog="BIGEYE" optimistic-lock="version">
+        <id name="idUsuario" type="int">
+            <column name="ID_USUARIO" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="perfil" class="br.com.tbsa.entity.Perfil" fetch="select">
+            <column name="ID_PERFIL" />
+        </many-to-one>
+        <property name="codusuario" type="string">
+            <column name="CODUSUARIO" length="50" not-null="true" />
+        </property>
+        <property name="nome" type="string">
+            <column name="NOME" length="100" not-null="true" />
+        </property>
+        <property name="senha" type="string">
+            <column name="SENHA" length="4000" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

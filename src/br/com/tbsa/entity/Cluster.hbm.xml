@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09/05/2018 20:17:26 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.tbsa.entity.Cluster" table="CLUSTER" schema="dbo" catalog="BIGEYE" optimistic-lock="version">
+        <id name="idCluster" type="int">
+            <column name="ID_CLUSTER" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="so" class="br.com.tbsa.entity.So" fetch="select">
+            <column name="ID_SO" not-null="true" />
+        </many-to-one>
+        <property name="descricao" type="string">
+            <column name="DESCRICAO" length="100" not-null="true" />
+        </property>
+        <property name="ipCluster" type="string">
+            <column name="IP_CLUSTER" length="50" />
+        </property>
+        <set name="vms" table="VM" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ID_CLUSTER" not-null="true" />
+            </key>
+            <one-to-many class="br.com.tbsa.entity.Vm" />
+        </set>
+    </class>
+</hibernate-mapping>

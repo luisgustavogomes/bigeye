@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09/05/2018 20:17:26 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.tbsa.entity.Vm" table="VM" schema="dbo" catalog="BIGEYE" optimistic-lock="version">
+        <id name="idVm" type="int">
+            <column name="ID_VM" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="ambiente" class="br.com.tbsa.entity.Ambiente" fetch="select">
+            <column name="ID_AMBIENTE" not-null="true" />
+        </many-to-one>
+        <many-to-one name="cluster" class="br.com.tbsa.entity.Cluster" fetch="select">
+            <column name="ID_CLUSTER" not-null="true" />
+        </many-to-one>
+        <many-to-one name="so" class="br.com.tbsa.entity.So" fetch="select">
+            <column name="ID_SO" not-null="true" />
+        </many-to-one>
+        <property name="nomeVm" type="string">
+            <column name="NOME_VM" length="100" not-null="true" />
+        </property>
+        <property name="ipVm" type="string">
+            <column name="IP_VM" length="50" />
+        </property>
+        <property name="descricao" type="string">
+            <column name="DESCRICAO" length="150" />
+        </property>
+        <property name="servidorBd" type="boolean">
+            <column name="SERVIDOR_BD" not-null="true" />
+        </property>
+        <set name="programasVms" table="PROGRAMAS_VM" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ID_VM" not-null="true" />
+            </key>
+            <one-to-many class="br.com.tbsa.entity.ProgramasVm" />
+        </set>
+    </class>
+</hibernate-mapping>

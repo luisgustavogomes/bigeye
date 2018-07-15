@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="fundoTrans" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="311.0" prefWidth="600.0" spacing="20.0" styleClass="vbox" stylesheets="@../../../../StyleCRUDedit.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.tbsa.controller.ClusterEditController">
+    <VBox id="fundo" alignment="CENTER_LEFT" prefHeight="239.0" prefWidth="580.0" spacing="10.0" styleClass="vbox" VBox.vgrow="ALWAYS">
+        <children>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="30.0" prefWidth="561.0" VBox.vgrow="ALWAYS">
+                <children>
+                    <GridPane prefHeight="30.0" prefWidth="520.0" HBox.hgrow="ALWAYS">
+                        <columnConstraints>
+                            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="118.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="435.0" minWidth="10.0" prefWidth="422.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <children>
+                            <Label alignment="CENTER" prefWidth="258.0" text="Descrição" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                            <JFXTextField fx:id="txtDescricao" prefHeight="25.0" prefWidth="429.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                <opaqueInsets>
+                                    <Insets left="10.0" right="10.0" />
+                                </opaqueInsets>
+                            </JFXTextField>
+                        </children>
+                    </GridPane>
+                </children>
+                <VBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="30.0" prefWidth="561.0" VBox.vgrow="ALWAYS">
+                <children>
+                    <GridPane prefHeight="30.0" prefWidth="520.0" HBox.hgrow="ALWAYS">
+                        <columnConstraints>
+                            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="123.0" minWidth="10.0" prefWidth="118.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="435.0" minWidth="10.0" prefWidth="422.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <children>
+                            <Label fx:id="IP" alignment="CENTER" prefWidth="258.0" text="IP" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                            <JFXTextField fx:id="txtIpi" prefHeight="25.0" prefWidth="429.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                <opaqueInsets>
+                                    <Insets left="10.0" right="10.0" />
+                                </opaqueInsets>
+                            </JFXTextField>
+                        </children>
+                    </GridPane>
+                </children>
+                <VBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="30.0" prefWidth="561.0" VBox.vgrow="ALWAYS">
+                <children>
+                    <GridPane prefHeight="30.0" prefWidth="520.0" HBox.hgrow="ALWAYS">
+                        <columnConstraints>
+                            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="139.0" minWidth="10.0" prefWidth="118.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="434.0" minWidth="10.0" prefWidth="422.0" />
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <children>
+                            <Label alignment="CENTER" prefHeight="17.0" prefWidth="123.0" text="Sistema Operacional" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                            <JFXComboBox fx:id="cbSo" prefHeight="25.0" prefWidth="443.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+                        </children>
+                    </GridPane>
+                </children>
+                <VBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" fillHeight="false" spacing="20.0" VBox.vgrow="ALWAYS">
+                <children>
+                    <Group>
+                        <children>
+                            <JFXButton id="btEdit" fx:id="btnConfirmar" buttonType="RAISED" layoutX="15.0" layoutY="11.0" onAction="#handlerConfirmar" prefWidth="100.0" styleClass="btns" text="Confirmar">
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </JFXButton>
+                            <JFXButton id="btEdit" fx:id="btnCancelar" buttonType="RAISED" cancelButton="true" layoutX="135.0" layoutY="11.0" onAction="#handlerCancelar" prefWidth="100.0" styleClass="btns" text="Cancelar">
+                                <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                </cursor>
+                            </JFXButton>
+                        </children>
+                    </Group>
+                </children>
+                <VBox.margin>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </VBox.margin>
+                <padding>
+                    <Insets top="10.0" />
+                </padding>
+            </HBox>
+        </children>
+        <VBox.margin>
+            <Insets bottom="30.0" left="10.0" right="10.0" top="30.0" />
+        </VBox.margin>
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </padding>
+    </VBox>
+</VBox>

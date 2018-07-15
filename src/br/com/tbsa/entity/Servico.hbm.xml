@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09/05/2018 20:17:26 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.tbsa.entity.Servico" table="SERVICO" schema="dbo" catalog="BIGEYE" optimistic-lock="version">
+        <id name="idServico" type="int">
+            <column name="ID_SERVICO" />
+            <generator class="identity" />
+        </id>
+        <property name="nome" type="string">
+            <column name="NOME" length="100" not-null="true" />
+        </property>
+        <property name="status" type="boolean">
+            <column name="STATUS" not-null="true" />
+        </property>
+        <property name="descricao" type="string">
+            <column name="DESCRICAO" length="150" />
+        </property>
+        <property name="executavel" type="string">
+            <column name="EXECUTAVEL" length="150" />
+        </property>
+        <set name="servicosVms" table="SERVICOS_VM" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ID_SERVICO" not-null="true" />
+            </key>
+            <one-to-many class="br.com.tbsa.entity.ServicosVm" />
+        </set>
+    </class>
+</hibernate-mapping>

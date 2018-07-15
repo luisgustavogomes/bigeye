@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09/05/2018 20:17:26 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.tbsa.entity.Ambiente" table="AMBIENTE" schema="dbo" catalog="BIGEYE" optimistic-lock="version">
+        <id name="idAmbiente" type="int">
+            <column name="ID_AMBIENTE" />
+            <generator class="identity" />
+        </id>
+        <property name="descricao" type="string">
+            <column name="DESCRICAO" length="150" />
+        </property>
+        <set name="vms" table="VM" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ID_AMBIENTE" not-null="true" />
+            </key>
+            <one-to-many class="br.com.tbsa.entity.Vm" />
+        </set>
+    </class>
+</hibernate-mapping>

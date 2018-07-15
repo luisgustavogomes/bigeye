@@ -1,0 +1,28 @@
+.vbox#fundoTrans{
+    -fx-background-color: rgba(255,255,255,0);
+}
+
+.vbox#fundo{
+    -fx-background-color:  #ededed;
+    -fx-background-radius:  20px 0px 20px 0px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.btns#btEdit {
+    -fx-background-color: white;
+}
+
+.btns#btEdit:hover{
+    -fx-background-color: #EAEAB9;
+}
+
+.btns#close{
+    -fx-background-color: ghostwhite;
+}
+
+.grid {
+    -fx-background-color:  #FFFFFF;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+
+}

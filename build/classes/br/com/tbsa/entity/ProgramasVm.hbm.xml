@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09/05/2018 20:17:26 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.tbsa.entity.ProgramasVm" table="PROGRAMAS_VM" schema="dbo" catalog="BIGEYE" optimistic-lock="version">
+        <id name="idProgramasVm" type="int">
+            <column name="ID_PROGRAMAS_VM" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="programa" class="br.com.tbsa.entity.Programa" fetch="select">
+            <column name="ID_PROGRAMA" not-null="true" />
+        </many-to-one>
+        <many-to-one name="vm" class="br.com.tbsa.entity.Vm" fetch="select">
+            <column name="ID_VM" not-null="true" />
+        </many-to-one>
+        <property name="dataInstalacao" type="timestamp">
+            <column name="DATA_INSTALACAO" length="23" not-null="true" />
+        </property>
+        <set name="programasVmHsts" table="PROGRAMAS_VM_HST" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ID_PROGRAMAS_VM" not-null="true" />
+            </key>
+            <one-to-many class="br.com.tbsa.entity.ProgramasVmHst" />
+        </set>
+        <set name="servicosVms" table="SERVICOS_VM" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ID_PROGRAMAS_VM" not-null="true" />
+            </key>
+            <one-to-many class="br.com.tbsa.entity.ServicosVm" />
+        </set>
+    </class>
+</hibernate-mapping>

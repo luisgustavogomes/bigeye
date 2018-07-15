@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="1200.0" styleClass="ancor" stylesheets="@../../../../Style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.tbsa.controller.HomeController">
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <left>
+                <AnchorPane prefHeight="590.0" prefWidth="257.0" style="-fx-background-color: rgb(236,236,236);" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox alignment="CENTER" layoutX="26.0" layoutY="27.0" spacing="10.0">
+                            <children>
+                                <JFXButton id="home" fx:id="btnCluster" alignment="TOP_LEFT" buttonType="RAISED" onAction="#handlerCluster" prefHeight="40.0" prefWidth="200.0" styleClass="btns" stylesheets="@Style.css" text="Cluster" textOverrun="CLIP">
+                                    <graphic>
+                                        <ImageView fitHeight="31.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/cluster.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <ripplerFill>
+                                        <RadialGradient centerX="0.2833333333333333" centerY="0.3666666666666667" radius="0.5">
+                                            <stops>
+                                                <Stop color="#214979f7" />
+                                                <Stop color="#255ea4f7" offset="1.0" />
+                                            </stops>
+                                        </RadialGradient>
+                                    </ripplerFill>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </JFXButton>
+                                <JFXButton id="home" fx:id="btnVm" alignment="TOP_LEFT" buttonType="RAISED" layoutX="46.0" layoutY="47.0" onAction="#handlerVm" prefHeight="40.0" prefWidth="200.0" styleClass="btns" stylesheets="@Style.css" text="VM's" textOverrun="CLIP">
+                                    <graphic>
+                                        <ImageView fitHeight="31.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/vm.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <ripplerFill>
+                                        <RadialGradient centerX="0.2833333333333333" centerY="0.3666666666666667" radius="0.5">
+                                            <stops>
+                                                <Stop color="#214979f7" />
+                                                <Stop color="#255ea4f7" offset="1.0" />
+                                            </stops>
+                                        </RadialGradient>
+                                    </ripplerFill>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </JFXButton>
+                                <JFXButton id="home" fx:id="btnSistemaOperacional" alignment="TOP_LEFT" buttonType="RAISED" layoutX="36.0" layoutY="37.0" onAction="#handlerSistemaOperacional" prefHeight="40.0" prefWidth="200.0" styleClass="btns" stylesheets="@Style.css" text="Sistema Operacional" textOverrun="CLIP">
+                                    <graphic>
+                                        <ImageView fitHeight="31.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/so.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <ripplerFill>
+                                        <RadialGradient centerX="0.2833333333333333" centerY="0.3666666666666667" radius="0.5">
+                                            <stops>
+                                                <Stop color="#214979f7" />
+                                                <Stop color="#255ea4f7" offset="1.0" />
+                                            </stops>
+                                        </RadialGradient>
+                                    </ripplerFill>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </JFXButton>
+                                <JFXButton id="home" fx:id="btnAmbiente" alignment="TOP_LEFT" buttonType="RAISED" layoutX="56.0" layoutY="57.0" onAction="#handlerAmbiente" prefHeight="40.0" prefWidth="200.0" styleClass="btns" stylesheets="@Style.css" text="Ambiente" textOverrun="CLIP">
+                                    <graphic>
+                                        <ImageView fitHeight="31.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/ambiente.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <ripplerFill>
+                                        <RadialGradient centerX="0.2833333333333333" centerY="0.3666666666666667" radius="0.5">
+                                            <stops>
+                                                <Stop color="#214979f7" />
+                                                <Stop color="#255ea4f7" offset="1.0" />
+                                            </stops>
+                                        </RadialGradient>
+                                    </ripplerFill>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </JFXButton>
+                                <JFXButton id="home" fx:id="btnProgramasVm" alignment="TOP_LEFT" buttonType="RAISED" layoutX="66.0" layoutY="67.0" onAction="#handlerProgramasVm" prefHeight="40.0" prefWidth="200.0" styleClass="btns" stylesheets="@Style.css" text="Programas Instalados" textOverrun="CLIP">
+                                    <graphic>
+                                        <ImageView fitHeight="31.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/programasvm.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <ripplerFill>
+                                        <RadialGradient centerX="0.2833333333333333" centerY="0.3666666666666667" radius="0.5">
+                                            <stops>
+                                                <Stop color="#214979f7" />
+                                                <Stop color="#255ea4f7" offset="1.0" />
+                                            </stops>
+                                        </RadialGradient>
+                                    </ripplerFill>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </JFXButton>
+                                <JFXButton id="home" fx:id="btnPrograma" alignment="TOP_LEFT" buttonType="RAISED" layoutX="76.0" layoutY="77.0" onAction="#handlerPrograma" prefHeight="40.0" prefWidth="200.0" styleClass="btns" stylesheets="@Style.css" text="Programas" textOverrun="CLIP">
+                                    <graphic>
+                                        <ImageView fitHeight="31.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/programas.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <ripplerFill>
+                                        <RadialGradient centerX="0.2833333333333333" centerY="0.3666666666666667" radius="0.5">
+                                            <stops>
+                                                <Stop color="#214979f7" />
+                                                <Stop color="#255ea4f7" offset="1.0" />
+                                            </stops>
+                                        </RadialGradient>
+                                    </ripplerFill>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </JFXButton>
+                                <JFXButton id="home" fx:id="btnLinhaSistema" alignment="TOP_LEFT" buttonType="RAISED" layoutX="86.0" layoutY="87.0" onAction="#handlerLinhaSistemas" prefHeight="40.0" prefWidth="200.0" styleClass="btns" stylesheets="@Style.css" text="Linha Sistemas" textOverrun="CLIP">
+                                    <graphic>
+                                        <ImageView fitHeight="31.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/linhaSistema.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <ripplerFill>
+                                        <RadialGradient centerX="0.2833333333333333" centerY="0.3666666666666667" radius="0.5">
+                                            <stops>
+                                                <Stop color="#214979f7" />
+                                                <Stop color="#255ea4f7" offset="1.0" />
+                                            </stops>
+                                        </RadialGradient>
+                                    </ripplerFill>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </JFXButton>
+                                <JFXButton id="home" fx:id="btnServico" alignment="TOP_LEFT" buttonType="RAISED" layoutX="96.0" layoutY="97.0" onAction="#handlerServico" prefHeight="40.0" prefWidth="200.0" styleClass="btns" stylesheets="@Style.css" text="Serviços" textOverrun="CLIP">
+                                    <graphic>
+                                        <ImageView fitHeight="31.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/servico.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <ripplerFill>
+                                        <RadialGradient centerX="0.2833333333333333" centerY="0.3666666666666667" radius="0.5">
+                                            <stops>
+                                                <Stop color="#214979f7" />
+                                                <Stop color="#255ea4f7" offset="1.0" />
+                                            </stops>
+                                        </RadialGradient>
+                                    </ripplerFill>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </JFXButton>
+                            </children>
+                        </VBox>
+                  <HBox alignment="CENTER" layoutX="11.0" layoutY="504.0" spacing="20.0">
+                     <children>
+                              <JFXButton id="home" fx:id="btnUsuario" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#handlerUsuario" prefHeight="40.0" prefWidth="90.0" styleClass="btns" text="Usuario" textOverrun="CLIP">
+                                  <graphic>
+                                      <ImageView fitHeight="31.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                              <Image url="@../img/usuario.png" />
+                                          </image>
+                                      </ImageView>
+                                  </graphic>
+                                  <ripplerFill>
+                                      <RadialGradient centerX="0.2833333333333333" centerY="0.3666666666666667" radius="0.5">
+                                          <stops>
+                                              <Stop color="#214979f7" />
+                                              <Stop color="#255ea4f7" offset="1.0" />
+                                          </stops>
+                                      </RadialGradient>
+                                  </ripplerFill>
+                                  <cursor>
+                                      <Cursor fx:constant="HAND" />
+                                  </cursor>
+                                  <tooltip>
+                                      <Tooltip text="Usuário" />
+                                  </tooltip>
+                              </JFXButton>
+                              <JFXButton id="home" fx:id="btnPerfil" alignment="CENTER" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" onAction="#handlerPerfil" prefHeight="40.0" prefWidth="90.0" styleClass="btns" text="Perfil" textOverrun="CLIP">
+                                  <graphic>
+                                      <ImageView fitHeight="31.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                              <Image url="@../img/perfil.png" />
+                                          </image>
+                                      </ImageView>
+                                  </graphic>
+                                  <ripplerFill>
+                                      <RadialGradient centerX="0.2833333333333333" centerY="0.3666666666666667" radius="0.5">
+                                          <stops>
+                                              <Stop color="#214979f7" />
+                                              <Stop color="#255ea4f7" offset="1.0" />
+                                          </stops>
+                                      </RadialGradient>
+                                  </ripplerFill>
+                                  <cursor>
+                                      <Cursor fx:constant="HAND" />
+                                  </cursor>
+                                  <tooltip>
+                                      <Tooltip text="Perfil" />
+                                  </tooltip>
+                              </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </HBox>
+                    </children>
+                </AnchorPane>
+            </left>
+            <bottom>
+                <AnchorPane prefHeight="30.0" prefWidth="1000.0" style="-fx-background-color: rgb(236,236,236);" BorderPane.alignment="CENTER" />
+            </bottom>
+            <right>
+                <AnchorPane prefHeight="519.0" prefWidth="30.0" style="-fx-background-color: rgb(236,236,236);" BorderPane.alignment="CENTER" />
+            </right>
+            <center>
+                <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="ALL_TABS" BorderPane.alignment="CENTER" />
+            </center>
+            <top>
+                <HBox style="-fx-background-color: rgb(236,236,236);" BorderPane.alignment="CENTER">
+                    <children>
+                        <HBox alignment="CENTER" maxHeight="100.0" maxWidth="345.0" minHeight="100.0" minWidth="345.0" prefHeight="100.0" prefWidth="345.0" HBox.hgrow="ALWAYS">
+                            <children>
+                                <ImageView fitHeight="56.0" fitWidth="271.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/009-logo.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="905.0" HBox.hgrow="ALWAYS" />
+                        <HBox alignment="CENTER_RIGHT" layoutX="330.0" layoutY="10.0" prefHeight="100.0" prefWidth="508.0" HBox.hgrow="ALWAYS">
+                            <padding>
+                                <Insets left="30.0" right="30.0" />
+                            </padding>
+                            <children>
+                                <JFXButton fx:id="btnSair" contentDisplay="GRAPHIC_ONLY" onAction="#handlerSair" prefHeight="25.0" prefWidth="27.0">
+                                    <graphic>
+                                        <ImageView fitHeight="33.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/power-off.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+            </top>
+        </BorderPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="fundoTrans" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="677.0" prefWidth="749.0" styleClass="vbox" stylesheets="@../../../../StyleCRUDedit.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.tbsa.controller.PerfilEditController">
+    <children>
+        <VBox id="fundo" alignment="TOP_CENTER" prefHeight="529.0" prefWidth="836.0" spacing="10.0" styleClass="vbox" VBox.vgrow="ALWAYS">
+            <children>
+                <HBox alignment="CENTER" fillHeight="false" prefHeight="46.0" prefWidth="540.0">
+                    <children>
+                        <GridPane prefHeight="30.0" prefWidth="520.0" HBox.hgrow="ALWAYS">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="10.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label alignment="CENTER" prefWidth="258.0" text="Descrição" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                                <JFXTextField fx:id="txtDescricao" prefHeight="25.0" prefWidth="464.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                    <opaqueInsets>
+                                        <Insets left="10.0" right="10.0" />
+                                    </opaqueInsets>
+                                </JFXTextField>
+                            </children>
+                        </GridPane>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" fillHeight="false" layoutX="30.0" layoutY="30.0" prefHeight="499.0" prefWidth="935.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <VBox fx:id="pane" HBox.hgrow="ALWAYS">
+                            <children>
+                                <GridPane prefHeight="517.0" prefWidth="585.0" styleClass="grid" VBox.vgrow="ALWAYS">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="197.0" minWidth="10.0" prefWidth="197.0" />
+                                        <ColumnConstraints hgrow="ALWAYS" minWidth="80.0" prefWidth="80.0" />
+                                        <ColumnConstraints hgrow="ALWAYS" minWidth="80.0" prefWidth="80.0" />
+                                        <ColumnConstraints hgrow="ALWAYS" maxWidth="247.0" minWidth="80.0" prefWidth="80.0" />
+                                        <ColumnConstraints hgrow="ALWAYS" maxWidth="256.0" minWidth="20.0" prefWidth="80.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints maxHeight="163.0" minHeight="10.0" prefHeight="71.0" vgrow="ALWAYS" />
+                                        <RowConstraints maxHeight="2.0" minHeight="2.0" prefHeight="2.0" vgrow="ALWAYS" />
+                                        <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="ALWAYS" />
+                                        <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="ALWAYS" />
+                                        <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="ALWAYS" />
+                                        <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="ALWAYS" />
+                                        <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="ALWAYS" />
+                                        <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="ALWAYS" />
+                                        <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="ALWAYS" />
+                                        <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="ALWAYS" />
+                                        <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="ALWAYS" />
+                                        <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="ALWAYS" />
+                                        <RowConstraints minHeight="15.0" prefHeight="15.0" vgrow="ALWAYS" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Label prefHeight="35.0" prefWidth="166.0" text="Menu" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Separator prefWidth="200.0" GridPane.columnSpan="2147483647" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS" />
+                                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="40.0" prefHeight="35.0" prefWidth="86.0" text="Criar" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="40.0" prefHeight="17.0" prefWidth="86.0" text="Editar" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="40.0" prefHeight="17.0" prefWidth="86.0" text="Excluir" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="40.0" prefHeight="35.0" prefWidth="115.0" text="Visualizar" textAlignment="CENTER" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Label>
+                                        <Label contentDisplay="CENTER" layoutX="26.0" layoutY="40.0" prefHeight="35.0" prefWidth="166.0" text="Cluster" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label contentDisplay="CENTER" prefHeight="35.0" prefWidth="166.0" text="Vm" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label contentDisplay="CENTER" layoutX="26.0" layoutY="146.0" prefHeight="35.0" prefWidth="166.0" text="So" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="4" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label contentDisplay="CENTER" layoutX="10.0" layoutY="40.0" prefHeight="35.0" prefWidth="166.0" text="Ambiente" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label contentDisplay="CENTER" layoutX="10.0" layoutY="40.0" prefHeight="35.0" prefWidth="166.0" text="Programas Instalados" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label contentDisplay="CENTER" layoutX="10.0" layoutY="40.0" prefHeight="35.0" prefWidth="166.0" text="Programas" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="7" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label contentDisplay="CENTER" layoutX="10.0" layoutY="40.0" prefHeight="35.0" prefWidth="166.0" text="Serviços" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="9" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label contentDisplay="CENTER" layoutX="10.0" layoutY="40.0" prefHeight="35.0" prefWidth="166.0" text="Usuários" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="10" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label contentDisplay="CENTER" layoutX="10.0" layoutY="40.0" prefHeight="35.0" prefWidth="166.0" text="Pefil" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="11" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label contentDisplay="CENTER" layoutX="10.0" layoutY="40.0" prefHeight="35.0" prefWidth="166.0" text="Dashbord" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="12" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXCheckBox fx:id="criarCluster" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                        <JFXCheckBox fx:id="criarVm" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                        <JFXCheckBox fx:id="criarSo" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                        <JFXCheckBox fx:id="criarAmbiente" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                        <JFXCheckBox fx:id="criarProgramasvm" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+                                        <JFXCheckBox fx:id="criarProgramas" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+                                        <JFXCheckBox fx:id="criarServicos" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+                                        <JFXCheckBox fx:id="criarUsuarios" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="10" />
+                                        <JFXCheckBox fx:id="criarPerfil" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="11" />
+                                        <JFXCheckBox fx:id="criarDashbord" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="12" />
+                                        <JFXCheckBox fx:id="editarCluster" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                        <JFXCheckBox fx:id="editarVm" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                        <JFXCheckBox fx:id="editarSo" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                        <JFXCheckBox fx:id="editarAmbiente" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                        <JFXCheckBox fx:id="editarProgramasvm" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+                                        <JFXCheckBox fx:id="editarProgramas" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+                                        <JFXCheckBox fx:id="editarServicos" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+                                        <JFXCheckBox fx:id="editarUsuarios" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="10" />
+                                        <JFXCheckBox fx:id="editarPerfil" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="11" />
+                                        <JFXCheckBox fx:id="editarDashbord" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="12" />
+                                        <JFXCheckBox fx:id="excluirCluster" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                        <JFXCheckBox fx:id="excluirVm" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                        <JFXCheckBox fx:id="excluirSo" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                        <JFXCheckBox fx:id="excluirAmbiente" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                        <JFXCheckBox fx:id="excluirProgramasvm" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+                                        <JFXCheckBox fx:id="excluirProgramas" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+                                        <JFXCheckBox fx:id="excluirServicos" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+                                        <JFXCheckBox fx:id="excluirUsuarios" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="10" />
+                                        <JFXCheckBox fx:id="excluirPerfil" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="11" />
+                                        <JFXCheckBox fx:id="excluirDashbord" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="12" />
+                                        <JFXCheckBox fx:id="visualizarCluster" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                                        <JFXCheckBox fx:id="visualizarVm" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+                                        <JFXCheckBox fx:id="visualizarSo" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                                        <JFXCheckBox fx:id="visualizarAmbiente" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+                                        <JFXCheckBox fx:id="visualizarProgramasvm" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+                                        <JFXCheckBox fx:id="visualizarProgramas" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+                                        <JFXCheckBox fx:id="visualizarServicos" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+                                        <JFXCheckBox fx:id="visualizarUsuarios" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="10" />
+                                        <JFXCheckBox fx:id="visualizarPerfil" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="11" />
+                                        <JFXCheckBox fx:id="visualizarDashbord" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="10.0" layoutY="47.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="12" />
+                                        <Label contentDisplay="CENTER" prefHeight="35.0" prefWidth="166.0" text="Linha de Sistema" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <JFXCheckBox fx:id="criarLinhaSistema" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+                                        <JFXCheckBox fx:id="editarLinhaSistema" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="361.0" layoutY="281.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+                                        <JFXCheckBox fx:id="excluirLinhaSistema" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="489.0" layoutY="281.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+                                        <JFXCheckBox fx:id="visualizarLinhaSistema" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" ellipsisString="" graphicTextGap="0.0" layoutX="617.0" layoutY="281.0" prefHeight="20.0" prefWidth="20.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER" />
+                                    </children>
+                                </GridPane>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox alignment="TOP_RIGHT" fillHeight="false" prefHeight="34.0" prefWidth="540.0" spacing="20.0">
+                    <children>
+                        <Group>
+                            <children>
+                                <JFXButton id="btEdit" fx:id="btnConfirmar" buttonType="RAISED" layoutX="15.0" layoutY="11.0" onAction="#handlerConfirmar" prefWidth="100.0" styleClass="btns" text="Confirmar">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </JFXButton>
+                                <JFXButton id="btEdit" fx:id="btnCancelar" buttonType="RAISED" cancelButton="true" layoutX="135.0" layoutY="11.0" onAction="#handlerCancelar" prefWidth="100.0" styleClass="btns" text="Cancelar">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </JFXButton>
+                            </children>
+                        </Group>
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                </HBox>
+            </children>
+            <VBox.margin>
+                <Insets bottom="30.0" left="10.0" right="10.0" top="30.0" />
+            </VBox.margin>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </VBox>
+    </children>
+</VBox>

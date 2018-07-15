@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 09/05/2018 20:17:26 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="br.com.tbsa.entity.Perfil" table="PERFIL" schema="dbo" catalog="BIGEYE" optimistic-lock="version">
+        <id name="idPerfil" type="int">
+            <column name="ID_PERFIL" />
+            <generator class="identity" />
+        </id>
+        <property name="codperfil" type="string">
+            <column name="CODPERFIL" length="50" not-null="true" />
+        </property>
+        <property name="textoMenu" type="string">
+            <column name="TEXTO_MENU" length="4000" not-null="true" />
+        </property>
+        <set name="usuarios" table="USUARIO" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ID_PERFIL" />
+            </key>
+            <one-to-many class="br.com.tbsa.entity.Usuario" />
+        </set>
+    </class>
+</hibernate-mapping>
